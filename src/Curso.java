@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 public class Curso {
     private int Id;
@@ -12,10 +13,13 @@ public class Curso {
             this.Id = id;
         else
             this.Id = -1;
+
+        Cadeiras = new ArrayList<Cadeira>();
     }
 
     public Curso() {
         this.Id = -1;
+        Cadeiras = new ArrayList<Cadeira>();
     }
 
     public int getId() {

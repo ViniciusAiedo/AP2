@@ -1,4 +1,20 @@
 public class Cadeira {
+    public int id;
+    public Cadeira(){
+
+    }
+    public Cadeira(int id, String nomeDaCadeira, String descricaoDaCadeira, int cargaHoraria, int horaInicio, int horaFim, int comecoDia, int comecoMes, int comecoAno) {
+        this.id = id;
+        this.nomeDaCadeira = nomeDaCadeira;
+        this.descricaoDaCadeira = descricaoDaCadeira;
+        this.cargaHoraria = cargaHoraria;
+        this.horaInicio = horaInicio;
+        this.horaFim = horaFim;
+        this.comecoDia = comecoDia;
+        this.comecoMes = comecoMes;
+        this.comecoAno = comecoAno;
+    }
+
     private String nomeDaCadeira;
     private String descricaoDaCadeira;
     private int cargaHoraria;
