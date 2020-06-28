@@ -65,6 +65,14 @@ public class Curso {
     public List<Cadeira> getCadeiras(){
         return this.Cadeiras;
     }
+    public String getCadeirasToString(){
+        String listaCadeiras = "";
+        for(int i = 0; i < this.Cadeiras.size(); i++){
+            listaCadeiras = listaCadeiras + this.Cadeiras.get(i).getNomeDaCadeira() + ", ";
+        }
+        listaCadeiras = listaCadeiras.trim().substring(0, listaCadeiras.length() - 2);
+        return listaCadeiras;
+    }
     public boolean removeCadeira(Cadeira Value){
         if (this.Cadeiras.remove(Value)){
             return true;

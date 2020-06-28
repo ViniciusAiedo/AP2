@@ -18,13 +18,16 @@ public class ListaCursos {
 
         return false;
     }
-
+    //Não será exatamente um update, pois a ideia é que possa alterar o id tambem
+    //Como a chave é unica, ao alterar o id da curso, o anterior deve ser excluido
     public static void updateCurso(Integer oldKey, Curso newValue){
         if (Cursos.remove(oldKey) != null) {
             addCurso(newValue);
         }
     }
 
+    //faz a remoção somente pelo id
+    //por isso, o ID do curso e a chave do Map devem ser iguais
     public static boolean deleteCurso(Integer Key){
         Curso temp;
         temp = Cursos.remove(Key);
@@ -40,6 +43,8 @@ public class ListaCursos {
         return Cursos.get(Id);
     }
 
+
+    //Exibe a lista de cursos e seus IDs
     public static void exibeCursos(){
         Curso temp = new Curso();
         for (Integer chave : Cursos.keySet()){
