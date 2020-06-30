@@ -1,7 +1,7 @@
 public class Cadeira {
     public int id;
     public Cadeira(){
-
+        //sorriam e acenem rapazes
     }
     public Cadeira(int id, String nomeDaCadeira, String descricaoDaCadeira, int cargaHoraria, int horaInicio, int horaFim, int comecoDia, int comecoMes, int comecoAno) {
         this.id = id;

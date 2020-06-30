@@ -5,7 +5,7 @@ public class Professor extends Pessoa {
     }
 
     public Professor(){
-
+        //sorriam e acenem rapazes
     }
 
     public int getId() {

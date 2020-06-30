@@ -35,6 +35,8 @@ public class ListaCadeiras {
     }
 
     //Exibe a lista de cadeiras e seus IDs
+
+
     public static boolean exbibeCadeira(){
         Cadeira temp;
         if (!(Cadeiras.size() > 0)){
